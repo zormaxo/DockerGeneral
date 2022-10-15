@@ -1,0 +1,9 @@
+version: '3.9'
+
+services:
+  s_testapp:
+    container_name: c_nginx
+    image: zormax/testapp
+    build:
+      context: .
+      #dockerfile: /.../...
