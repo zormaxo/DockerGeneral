@@ -2,7 +2,7 @@ version: '3.9'
 
 services:
   s_testapp:
-    container_name: c_nginx
+    container_name: c_testapp
     image: zormax/testapp
     build:
       context: .

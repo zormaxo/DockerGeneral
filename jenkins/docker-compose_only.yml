@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  s_jenkins:
+    container_name: c_jenkinsonly
+    image: jenkins/jenkins
+    ports:
+      - 8090:8080
+      - 50000:50000
+    volumes:
+      - ./jenkins_data:/var/jenkins_home
