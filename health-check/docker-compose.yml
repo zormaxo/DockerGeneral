@@ -1,0 +1,15 @@
+version: "3.9"
+
+services:
+  s_nginx:
+    container_name: c_nginx
+    image: nginx
+    ports:
+      - 80:80
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost"]
+      interval: 5s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+      

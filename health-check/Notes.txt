@@ -1,0 +1,1 @@
+docker run -d -p 80:80 --name c_nginx --health-cmd "curl -f http://localhost || exit 1" --health-interval 5s --health-timeout 3s --health-retries 3 --health-start-period 6s nginx
